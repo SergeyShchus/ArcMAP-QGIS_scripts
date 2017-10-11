@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<Projects>
+	<MDCS>
+		<StartTime>20171011T163920</StartTime>
+		<EndTime>20171011T163944</EndTime>
+		<TotalDuration>24</TotalDuration>
+		<Message>Using template:..\Parameter\Config\S_CCMs.xml</Message>
+		<Message>Using default command(s):CM+AF+AR+SP+BF+DO+BO+CV</Message>
+		<Message>Processing command(s):CM+AF+AR+SP+BF+DO+BO+CV</Message>
+		<Message>Done...</Message>
+		<CM>
+			<Message>Command:CM-&gt;Create a new mosaic dataset.</Message>
+			<Message>
+				Creating Geodatabase: ..\scripts\Base\..\..\MD\NAIP_Imagery_cmd.gdb
+				<Error>
+					<type>warning</type>
+					<text>	File geodatabase already exists!</text>
+				</Error>
+			</Message>
+			<Message>Creating source mosaic datasets:</Message>
+			<Message>	S_CountyCompressed2005</Message>
+			<Status>OK</Status>
+			<Duration>4</Duration>
+		</CM>
+		<AF>
+			<Message>Command:AF-&gt;Add fields.</Message>
+			<Message>Adding custom fields:</Message>
+			<Message>Using mosaic dataset:S_CountyCompressed2005</Message>
+			<Message>	Creating fields:</Message>
+			<Message>		Best</Message>
+			<Message>		Year</Message>
+			<Message>		Source</Message>
+			<Message>		Metadata_URL</Message>
+			<Message>		SensorName</Message>
+			<Message>		LeafStatus</Message>
+			<Status>OK</Status>
+			<Duration>16</Duration>
+		</AF>
+		<AR>
+			<Message>Command:AR-&gt;Add rasters/data to a mosaic dataset.</Message>
+			<Message>Adding rasters:</Message>
+			<Message>	Using mosaic dataset/ID:S_CountyCompressed2005/PreprocessOrtho</Message>
+			<Message>	Using ART for S_COUNTYCOMPRESSED2005: Raster Dataset</Message>
+			<Message>
+				Adding items..
+				<Error>
+					<type>warning</type>
+					<text>ERROR 999999: Error executing function.
+Failed to execute (AddRastersToMosaicDataset).
+</text>
+				</Error>
+				<Error>
+					<type>warning</type>
+					<text>Executing: AddRastersToMosaicDataset ..\scripts\Base\..\..\MD\NAIP_Imagery_cmd.gdb\S_CountyCompressed2005 &quot;Raster Dataset&quot; c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\ UPDATE_CELL_SIZES UPDATE_BOUNDARY NO_OVERVIEWS # 0 1500 # # SUBFOLDERS ALLOW_DUPLICATES NO_PYRAMIDS NO_STATISTICS NO_THUMBNAILS # NO_FORCE_SPATIAL_REFERENCE NO_STATISTICS #
+Start Time: Wed Oct 11 16:39:43 2017
+2017-10-11T16:39:43.867: Loading raster datasets
+2017-10-11T16:39:43.877: Completed crawling 1 data source items. Added 1 mosaic dataset items.
+2017-10-11T16:39:43.877: Synchronizing crawled data source items
+2017-10-11T16:39:43.881: Synchronizing items associated with raster type instance 'Raster Dataset' [ID: 1].
+2017-10-11T16:39:43.881: Error: 80042019: Could not build mosaic dataset item. [ID: 1, URI: 'c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\']
+2017-10-11T16:39:43.881: Error: 8004203f: Could not open source as a raster dataset. [c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\]
+2017-10-11T16:39:43.881: Error: 8004205e: 1 mosaic dataset items could not be built.
+2017-10-11T16:39:43.881: Removing invalid mosaic dataset items
+2017-10-11T16:39:43.891: Removing unreferenced raster type and overview instances
+2017-10-11T16:39:43.891: Removed 1 mosaic dataset items and 1 unreferenced raster type instances.
+2017-10-11T16:39:43.951: Removing broken mosaic dataset items.
+2017-10-11T16:39:43.951: Removed 0 mosaic dataset items and 0 unreferenced raster type instances.
+2017-10-11T16:39:44.001: Completed synchronization: 1 items selected, 0 items synchronized.
+ERROR 999999: Error executing function.
+Failed to execute (AddRastersToMosaicDataset).
+Failed at Wed Oct 11 16:39:44 2017 (Elapsed Time: 0.34 seconds)</text>
+				</Error>
+				<Error>
+					<type>critical</type>
+					<text>No new mosaic dataset items added to dataset (S_CountyCompressed2005). Verify the input data path/raster type is correct</text>
+				</Error>
+				<Error>
+					<type>critical</type>
+					<text>Executing: AddRastersToMosaicDataset ..\scripts\Base\..\..\MD\NAIP_Imagery_cmd.gdb\S_CountyCompressed2005 &quot;Raster Dataset&quot; c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\ UPDATE_CELL_SIZES UPDATE_BOUNDARY NO_OVERVIEWS # 0 1500 # # SUBFOLDERS ALLOW_DUPLICATES NO_PYRAMIDS NO_STATISTICS NO_THUMBNAILS # NO_FORCE_SPATIAL_REFERENCE NO_STATISTICS #
+Start Time: Wed Oct 11 16:39:43 2017
+2017-10-11T16:39:43.867: Loading raster datasets
+2017-10-11T16:39:43.877: Completed crawling 1 data source items. Added 1 mosaic dataset items.
+2017-10-11T16:39:43.877: Synchronizing crawled data source items
+2017-10-11T16:39:43.881: Synchronizing items associated with raster type instance 'Raster Dataset' [ID: 1].
+2017-10-11T16:39:43.881: Error: 80042019: Could not build mosaic dataset item. [ID: 1, URI: 'c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\']
+2017-10-11T16:39:43.881: Error: 8004203f: Could not open source as a raster dataset. [c:\image_mgmt_workflows\PreprocessedOrthos\data\NAIP_2005\]
+2017-10-11T16:39:43.881: Error: 8004205e: 1 mosaic dataset items could not be built.
+2017-10-11T16:39:43.881: Removing invalid mosaic dataset items
+2017-10-11T16:39:43.891: Removing unreferenced raster type and overview instances
+2017-10-11T16:39:43.891: Removed 1 mosaic dataset items and 1 unreferenced raster type instances.
+2017-10-11T16:39:43.951: Removing broken mosaic dataset items.
+2017-10-11T16:39:43.951: Removed 0 mosaic dataset items and 0 unreferenced raster type instances.
+2017-10-11T16:39:44.001: Completed synchronization: 1 items selected, 0 items synchronized.
+ERROR 999999: Error executing function.
+Failed to execute (AddRastersToMosaicDataset).
+Failed at Wed Oct 11 16:39:44 2017 (Elapsed Time: 0.34 seconds)</text>
+				</Error>
+			</Message>
+			<Status>Failed!</Status>
+			<Duration>4</Duration>
+		</AR>
+	</MDCS>
+</Projects>

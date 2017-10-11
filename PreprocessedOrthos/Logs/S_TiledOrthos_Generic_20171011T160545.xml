@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<Projects>
+	<MDCS>
+		<StartTime>20171011T160438</StartTime>
+		<EndTime>20171011T160545</EndTime>
+		<TotalDuration>66</TotalDuration>
+		<Message>Using template:F:\GISPRO\PreprocessedOrthos\PreprocessedOrthos_Scripts\PreprocessedOrthos/Parameter/Config/PreProcess/S_TiledOrthos_Generic.xml</Message>
+		<Message>Using default command(s):CM+AF+AR+SP+BF+BPS+DO+BO+CV</Message>
+		<Message>Processing command(s):CM+AF+AR+SP+BF+BPS+DO+BO+CV</Message>
+		<Message>Done...</Message>
+		<CM>
+			<Message>Command:CM-&gt;Create a new mosaic dataset.</Message>
+			<Message>
+				Creating Geodatabase: F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb
+				<Error>
+					<type>warning</type>
+					<text>	File geodatabase already exists!</text>
+				</Error>
+			</Message>
+			<Message>Creating source mosaic datasets:</Message>
+			<Message>	S_TiledOrthos2010</Message>
+			<Status>OK</Status>
+			<Duration>1</Duration>
+		</CM>
+		<AF>
+			<Message>Command:AF-&gt;Add fields.</Message>
+			<Message>Adding custom fields:</Message>
+			<Message>Using mosaic dataset:S_TiledOrthos2010</Message>
+			<Message>	Creating fields:</Message>
+			<Message>		Best</Message>
+			<Message>		Year</Message>
+			<Message>		Source</Message>
+			<Message>		Metadata_URL</Message>
+			<Message>		LeafStatus</Message>
+			<Status>OK</Status>
+			<Duration>14</Duration>
+		</AF>
+		<AR>
+			<Message>Command:AR-&gt;Add rasters/data to a mosaic dataset.</Message>
+			<Message>Adding rasters:</Message>
+			<Message>	Using mosaic dataset/ID:S_TiledOrthos2010/PreprocessOrtho</Message>
+			<Message>	Using ART for S_TILEDORTHOS2010: Raster Dataset</Message>
+			<Message>Adding items..</Message>
+			<Message>Calculating 'Dataset ID' for the mosaic dataset (S_TiledOrthos2010) with value (PreprocessOrtho)</Message>
+			<Status>OK</Status>
+			<Duration>8</Duration>
+		</AR>
+		<SP>
+			<Message>
+				Command:SP-&gt;Set mosaic dataset properties.
+				<Error>
+					<type>warning</type>
+					<text>Args less than required, filling with default (#)</text>
+				</Error>
+				<Error>
+					<type>warning</type>
+					<text>Original args may have been updated through custom code.</text>
+				</Error>
+			</Message>
+			<Message>Calling (arcpy.SetMosaicDatasetProperties_management)</Message>
+			<Message>Status: OK</Message>
+			<Status>OK</Status>
+			<Duration>1</Duration>
+		</SP>
+		<BF>
+			<Message>Command:BF-&gt;Build footprint.</Message>
+			<Message>	Recomputing footprint for the mosaic dataset: S_TiledOrthos2010</Message>
+			<Message>Calling (arcpy.BuildFootprints_management)</Message>
+			<Message>Status: OK</Message>
+			<Status>OK</Status>
+			<Duration>10</Duration>
+		</BF>
+		<BPS>
+			<Message>Command:BPS-&gt;Build pyramid and Statistics.</Message>
+			<Message>	Building Pyramids and Calculating Statistic for the mosaic dataset : S_TiledOrthos2010</Message>
+			<Status>OK</Status>
+			<Duration>10</Duration>
+		</BPS>
+		<DO>
+			<Message>Command:DO-&gt;Defines the tiling schema and properties of the preprocessed raster datasets.</Message>
+			<Message>Define overviews for:F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb\S_TiledOrthos2010</Message>
+			<Status>OK</Status>
+			<Duration>2</Duration>
+		</DO>
+		<BO>
+			<Message>Command:BO-&gt;Defines and generates overviews for a mosaic dataset.</Message>
+			<Message>Building overviews for:F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb\S_TiledOrthos2010</Message>
+			<Status>OK</Status>
+			<Duration>11</Duration>
+		</BO>
+		<CV>
+			<Message>Command:CV-&gt;Calculate mosaic dataset values.</Message>
+			<Message>Calculate values:F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb\S_TiledOrthos2010</Message>
+			<Status>OK</Status>
+			<Duration>6</Duration>
+		</CV>
+	</MDCS>
+</Projects>

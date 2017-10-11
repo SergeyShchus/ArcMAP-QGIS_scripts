@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<Projects>
+	<MDCS>
+		<StartTime>20171011T161832</StartTime>
+		<EndTime>20171011T161849</EndTime>
+		<TotalDuration>16</TotalDuration>
+		<Message>Using template:F:\GISPRO\PreprocessedOrthos\PreprocessedOrthos_Scripts\PreprocessedOrthos/Parameter/Config/PreProcess/D_Preprocessed_Generic.xml</Message>
+		<Message>Using default command(s):CM+AF+AR+BB+CV+SP</Message>
+		<Message>Processing command(s):CM+AF+AR+BB+CV+SP</Message>
+		<Message>Done...</Message>
+		<CM>
+			<Message>Command:CM-&gt;Create a new mosaic dataset.</Message>
+			<Message>
+				Creating Geodatabase: F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb
+				<Error>
+					<type>warning</type>
+					<text>	File geodatabase already exists!</text>
+				</Error>
+			</Message>
+			<Message>Creating source mosaic datasets:</Message>
+			<Message>	D_NAIP_2_Years</Message>
+			<Status>OK</Status>
+			<Duration>1</Duration>
+		</CM>
+		<AF>
+			<Message>Command:AF-&gt;Add fields.</Message>
+			<Message>Adding custom fields:</Message>
+			<Message>Using mosaic dataset:D_NAIP_2_Years</Message>
+			<Message>	Creating fields:</Message>
+			<Message>		Best</Message>
+			<Status>OK</Status>
+			<Duration>3</Duration>
+		</AF>
+		<AR>
+			<Message>Command:AR-&gt;Add rasters/data to a mosaic dataset.</Message>
+			<Message>Adding rasters:</Message>
+			<Message>	Using mosaic dataset/ID:D_NAIP_2_Years/Derived_Preprocess</Message>
+			<Message>	Using ART for D_NAIP_2_YEARS: Table</Message>
+			<Message>Adding items..</Message>
+			<Status>OK</Status>
+			<Duration>7</Duration>
+		</AR>
+		<BB>
+			<Message>Command:BB-&gt;Build boundary.</Message>
+			<Message>Building the boundary ENVELOPE</Message>
+			<Status>OK</Status>
+			<Duration>0</Duration>
+		</BB>
+		<CV>
+			<Message>Command:CV-&gt;Calculate mosaic dataset values.</Message>
+			<Message>Calculate values:F:/GISPRO/PreprocessedOrthos/PreprocessedOrthos_Scripts/PreprocessedOrthos/MD/NAIP_Imagery_GP.gdb\D_NAIP_2_Years</Message>
+			<Status>OK</Status>
+			<Duration>1</Duration>
+		</CV>
+		<SP>
+			<Message>
+				Command:SP-&gt;Set mosaic dataset properties.
+				<Error>
+					<type>warning</type>
+					<text>Args less than required, filling with default (#)</text>
+				</Error>
+				<Error>
+					<type>warning</type>
+					<text>Original args may have been updated through custom code.</text>
+				</Error>
+			</Message>
+			<Message>Calling (arcpy.SetMosaicDatasetProperties_management)</Message>
+			<Message>Status: OK</Message>
+			<Status>OK</Status>
+			<Duration>1</Duration>
+		</SP>
+	</MDCS>
+</Projects>
