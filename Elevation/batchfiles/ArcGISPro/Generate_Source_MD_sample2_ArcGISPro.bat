@@ -1,0 +1,14 @@
+@echo off
+
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_Click_LiDAR_DSM.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_Click_LiDAR_DTM.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_ETOPO.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_EGM2008.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_GMTED2010.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_Portland_Lidar_DSM.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_Portland_Lidar_DTM.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_SRTM.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_USGS_NED13arcsec.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_USGS_NED19arcsec.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_USGS_NED1arcsec.xml
+"c:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe" F:\GISPRO\Elevation\ElevationScript\Elevation\scripts\MDCS.py -i:F:\GISPRO\Elevation\ElevationScript\Elevation\Parameter\config\sample2\S_WorldZeroElevationBackdrop.xml
