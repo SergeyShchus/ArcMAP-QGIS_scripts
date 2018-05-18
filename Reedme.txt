@@ -1,8 +1,0 @@
-Sentinel Index Toolbox has been developed by Roberto Matellanes for remote sensing lovers with little skills using GIS.
-The tool works with ArcGIS and ArcGIS Pro versions.
-
-For new updates and bug fixes visit http://www.gisandbeers.com/caja-herramientas-sentinel-index-toolbox/
-
-Enjoy it!
-
-May 2018              
